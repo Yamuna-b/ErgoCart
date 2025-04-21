@@ -1,113 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ErgoCart - Ergonomic Chairs</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ErgoCart - Ergonomic Chairs</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="header">
+    <div class="logo">ErgoCart</div>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#video">Demo</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Banner Section -->
-    <div class="banner">
-        <div class="banner-container">
-            <div class="banner-slide">Free Shipping on Orders Over $100! Shop Now!</div>
-            <div class="banner-slide">New Arrivals Are Here. Discover the Collection!</div>
-            <div class="banner-slide">Get Exclusive Discounts on ErgoCart Products!</div>
-        </div>
+  <section class="banner" id="home">
+    <h1>Grab the Best Ergonomic Chairs!</h1>
+    <p>Comfort meets style – Up to 50% off</p>
+  </section>
+
+  <section class="slider">
+    <div class="slides">
+      <img src="chair1.jpg" class="slide" alt="Chair 1">
+      <img src="chair2.jpg" class="slide" alt="Chair 2">
+      <img src="chair3.jpg" class="slide" alt="Chair 3">
     </div>
+  </section>
 
-    <!-- Header Section -->
-    <header>
-        <div class="logo">
-            <a href="#">ErgoCart</a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Cart</a></li>
-                <li><a href="#">Profile</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Content Section -->
-    <div class="content">
-        <h1>Welcome to ErgoCart</h1>
-        <p>Explore our ergonomic collection for your perfect workspace.</p>
-
-    <!-- Sidebar (for larger screens) -->
-    <div class="sidebar">
-        <ul>
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Orders</a></li>
-        <li><a href="#">Settings</a></li>
-        <li><a href="#">Logout</a></li>
-    </ul>
-</div>
-
-<!-- Product Section -->
-<section class="product">
-    <div class="product-images">
-        <div class="carousel">
-            <div class="carousel-images">
-                <img src="https://via.placeholder.com/500" alt="Product Image 1" class="carousel-image active">
-                <img src="https://via.placeholder.com/500" alt="Product Image 2" class="carousel-image">
-                <img src="https://via.placeholder.com/500" alt="Product Image 3" class="carousel-image">
-            </div>
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
-        </div>
+  <section class="products" id="products">
+    <h2>Featured Chairs</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="chair1.jpg" alt="ErgoPlus Chair">
+        <h3>ErgoPlus Chair</h3>
+        <p>Rs. 5,499</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="chair2.jpg" alt="BackSupport Pro">
+        <h3>BackSupport Pro</h3>
+        <p>Rs. 6,299</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="chair3.jpg" alt="ZenSit Premium">
+        <h3>ZenSit Premium</h3>
+        <p>Rs. 7,999</p>
+        <button>Add to Cart</button>
+      </div>
     </div>
-    <div class="product-details">
-        <h1>ErgoPosture Ergonomic Chair</h1>
-        <p class="price">$299.99</p>
-        <p class="description">
-            The ErgoPosture Ergonomic Chair is designed to provide you with the best seating experience,
-            whether you're working or relaxing. With lumbar support, adjustable armrests, and a breathable
-            mesh back, it's the perfect chair for any workspace.
-        </p>
-        <div class="button-group">
-            <button>Add to Cart</button>
-            <button>Buy Now</button>
-        </div>
+  </section>
+
+  <section class="video-demo" id="video">
+    <h2>Watch Our Demo</h2>
+    <video controls width="600">
+      <source src="demo.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </section>
+
+  <div class="popup" id="offerPopup">
+    <p>🎉 Limited Time Offer: Get 10% off your first purchase!</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+
+  <footer class="footer" id="contact">
+    <p>Contact us: ergocart@example.com</p>
+    <div class="socials">
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+      <a href="#">Facebook</a>
     </div>
-</section>
+  </footer>
 
-<!-- Product Video Section -->
-<section class="product-video">
-    <h2>Watch Our Product Demo</h2>
-    <div class="video-container">
-        <video class="product-video-demo" controls>
-            <source src="chair-demo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-</section>
-
-<!-- Popup for Promo -->
-<div class="popup" id="popup">
-    <div class="popup-content">
-        <h3>Special Offer!</h3>
-        <p>Get 10% off your first purchase with code NEW10</p>
-        <button id="close-popup" class="close-btn">&times;</button>
-    </div>
-</div>
-
-<!-- Footer Section -->
-<footer>
-    <p>&copy; 2024 ErgoCart. All rights reserved.</p>
-    <ul class="social-links">
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Instagram</a></li>
-    </ul>
-</footer>
-
-<!-- Scripts -->
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
