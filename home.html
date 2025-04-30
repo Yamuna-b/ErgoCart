@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ErgoCart - Home</title>
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js" defer></script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+          <i class='bx bx-store icon' ></i>
+          <div class="logo_name">ErgoCart</div>
+          <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+              <a href="#search">
+                <i class='bx bx-search'></i>
+                <span class="links_name">Search</span>
+              </a>
+              <span class="tooltip">Search</span>
+            </li>
+            <li>
+              <a href="#dashboard">
+                <i class='bx bx-grid-alt'></i>
+                <span class="links_name">Dashboard</span>
+              </a>
+              <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+              <a href="#categories">
+                <i class='bx bx-category'></i>
+                <span class="links_name">Categories</span>
+              </a>
+              <span class="tooltip">Categories</span>
+            </li>
+            <li>
+              <a href="#bestsellers">
+                <i class='bx bx-star'></i>
+                <span class="links_name">Bestsellers</span>
+              </a>
+              <span class="tooltip">Bestsellers</span>
+            </li>
+            <li>
+              <a href="#combos">
+                <i class='bx bx-gift'></i>
+                <span class="links_name">Combos</span>
+              </a>
+              <span class="tooltip">Combos</span>
+            </li>
+            <li>
+              <a href="#cart">
+                <i class='bx bx-cart'></i>
+                <span class="links_name">Cart</span>
+              </a>
+              <span class="tooltip">Cart</span>
+            </li>
+            <li>
+              <a href="#wishlist">
+                <i class='bx bx-heart'></i>
+                <span class="links_name">Wishlist</span>
+              </a>
+              <span class="tooltip">Wishlist</span>
+            </li>
+            <li>
+              <a href="#profile">
+                <i class='bx bx-user'></i>
+                <span class="links_name">Account</span>
+              </a>
+              <span class="tooltip">Account</span>
+            </li>
+            <li>
+              <a href="#support">
+                <i class='bx bx-help-circle'></i>
+                <span class="links_name">Support</span>
+              </a>
+              <span class="tooltip">Support</span>
+            </li>
+            <li class="profile">
+              <div class="profile-details">
+                <img src="https://drive.google.com/uc?export=view&id=1ETZYgPpWbbBtpJnhi42_IR3vOwSOpR4z" alt="profileImg">
+                <div class="name_job">
+                  <div class="name">Ergo User</div>
+                  <div class="job">Shopper</div>
+                </div>
+              </div>
+              <i class='bx bx-log-out' id="log_out"></i>
+            </li>
+          </ul>
+      </div>
+      <div id="main-content">
+        <header>
+            <div class="header-logo">
+              <a href="#">ErgoCart</a>
+            </div>
+            <nav>
+              <ul class="nav-center">
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#bestsellers">Bestsellers</a></li>
+                <li><a href="#combos">Combos</a></li>
+                <li><a href="#support">Support</a></li>
+              </ul>
+              <ul class="nav-right">
+                <li>
+                    <form class="nav-search-form" action="#" autocomplete="off">
+                      <input type="search" placeholder="Search products..." aria-label="Search products">
+                      <button type="submit" aria-label="Search">
+                        <i class='bx bx-search'></i>
+                      </button>
+                    </form>
+                  </li>
+                  <li>
+                    <a href="#cart" aria-label="Cart">
+                      <i class='bx bx-cart'></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#profile" aria-label="Profile">
+                      <i class='bx bx-user'></i>
+                    </a>
+                  </li>
+              </ul>
+            </nav>
+          </header>          
+    <main>
+        <section id="hero">
+            <h1>Welcome to ErgoCart</h1>
+            <p>Discover the perfect ergonomic solutions for your home and office.</p>
+            <button id="shop-now-btn" aria-label="Shop Now">Shop Now</button>
+        </section>
+
+        <section id="product-categories">
+            <h2>Shop by Categories</h2>
+            <div class="product-links">
+                <a href="insoles/insoles.html" class="product-link">Insoles</a>
+                <a href="pillows/pillows.html" class="product-link">Pillows</a>
+                <a href="cushions/cushions.html" class="product-link">Cushions</a>
+                <a href="barefootsocks/barefootsocks.html" class="product-link">Barefoot Shoes</a>
+                <a href="chairs/chairs.html" class="product-link">Chairs</a>
+                <a href="covers/covers.html" class="product-link">Covers</a>
+                <a href="masks/masks.html" class="product-link">Masks</a>
+            </div>
+        </section>
+
+        <section id="bestsellers">
+            <h2>Best Sellers</h2>
+            <div class="bestseller-list">
+                <div class="bestseller-item">
+                    <h3>ErgoCart Ortho Memory Pillow</h3>
+                    <p>₹999 <span class="original-price">₹1,999</span></p>
+                    <a href="carneckpillow/carneckpillow.html">View Details</a>
+                </div>
+                <div class="bestseller-item">
+                    <h3>ErgoCart Wrist Support Brace</h3>
+                    <p>₹699 <span class="original-price">₹1,499</span></p>
+                    <a href="wristsupportbrace/wristsupportbrace.html">View Details</a>
+                </div>
+                <div class="bestseller-item">
+                    <h3>ErgoCart Comfort Shoe Insoles</h3>
+                    <p>₹499 <span class="original-price">₹999</span></p>
+                    <a href="shoeinsoles/shoeinsoles.html">View Details</a>
+                </div>
+                <div class="bestseller-item">
+                    <h3>ErgoCart Travel Neck Pillow</h3>
+                    <p>₹1,299 <span class="original-price">₹2,499</span></p>
+                    <a href="carneckpillow/carneckpillow.html">View Details</a>
+                </div>
+                <div class="bestseller-item">
+                    <h3>ErgoCart Comfort Cushion</h3>
+                    <p>₹1,499 <span class="original-price">₹2,999</span></p>
+                    <a href="cushions/cushions.html">View Details</a>
+                </div>
+                <div class="bestseller-item">
+                    <h3>ErgoCart Mattress Topper</h3>
+                    <p>₹2,999 <span class="original-price">₹4,999</span></p>
+                    <a href="mattresstopper/mattresstopper.html">View Details</a>
+                </div>
+                <div class="bestseller-item">
+                    <h3>ErgoCart Car Neck Pillow</h3>
+                    <p>₹1,199 <span class="original-price">₹2,199</span></p>
+                    <a href="carneckpillow/carneckpillow.html">View Details</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="newlaunches">
+            <h2>New Launches</h2>
+            <div class="new-launches-list">
+                <div class="new-launch-item">
+                    <h3>ErgoCart Lumbar Support Cushion</h3>
+                    <p>₹1,499</p>
+                    <a href="lumbarcushion.html">View Details</a>
+                </div>
+                <div class="new-launch-item">
+                    <h3>ErgoCart Foot Rest Cushion</h3>
+                    <p>₹1,199</p>
+                    <a href="footrestcushion.html">View Details</a>
+                </div>
+                <div class="new-launch-item">
+                    <h3>ErgoCart Adjustable Laptop Stand</h3>
+                    <p>₹2,499</p>
+                    <a href="laptopstand.html">View Details</a>
+                </div>
+                <div class="new-launch-item">
+                    <h3>ErgoCart Anti-Fatigue Mat</h3>
+                    <p>₹2,999</p>
+                    <a href="antifatiguemat.html">View Details</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="combos">
+            <h2>Combos</h2>
+            <div class="combo-list">
+                <div class="combo-item">
+                    <h3>ErgoCart Comfort Combo</h3>
+                    <p>Includes: Car Neck Pillow, Mattress Topper</p>
+                    <p>Price: ₹1,999</p>
+                    <a href="combos.html">View Details</a>
+                </div>
+                <div class="combo-item">
+                    <h3>ErgoCart Travel Combo</h3>
+                    <p>Includes: Car Neck Pillow, Shoe Insoles</p>
+                    <p>Price: ₹1,499</p>
+                    <a href="combos.html">View Details</a>
+                </div>
+                <div class="combo-item">
+                    <h3>ErgoCart Comfort Plus Combo</h3>
+                    <p>Includes: Car Neck Pillow, Mattress Topper, Shoe Insoles</p>
+                    <p>Price: ₹2,499</p>
+                    <a href="combos.html">View Details</a>
+                </div>
+                <div class="combo-item">
+                    <h3>ErgoCart Ultimate Comfort Combo</h3>
+                    <p>Includes: Cushions, Pillows</p>
+                    <p>Price: ₹3,499</p>
+                    <a href="combos.html">View Details</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="concerns">
+            <h2>Shop By Concern</h2>
+            <div class="concern-list">
+                <div class="concern-item">
+                    <h3>Back Pain</h3>
+                    <p>Shop products designed to alleviate back pain.</p>
+                    <a href="backpain.html">Shop Now</a>
+                </div>
+                <div class="concern-item">
+                    <h3>Neck Pain</h3>
+                    <p>Explore our range of neck support products.</p>
+                    <a href="neckpain.html">Shop Now</a>
+                </div>
+                <div class="concern-item">
+                    <h3>Foot Pain</h3>
+                    <p>Find solutions for foot discomfort.</p>
+                    <a href="footpain.html">Shop Now</a>
+                </div>
+                <div class="concern-item">
+                    <h3>Wrist Pain</h3>
+                    <p>Discover ergonomic wrist support options.</p>
+                    <a href="wristpain.html">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews">
+            <h2>Reviews</h2>
+            <div class="review-list">
+                <div class="review-item">
+                    <h3>John Doe</h3>
+                    <p>"The ErgoCart Ortho Memory Pillow has changed my sleep quality!"</p>
+                </div>
+                <div class="review-item">
+                    <h3>Jane Smith</h3>
+                    <p>"I love the comfort of the ErgoCart Comfort Cushion. Highly recommend!"</p>
+                </div>
+                <div class="review-item">
+                    <h3>Mike Johnson</h3>
+                    <p>"The ErgoCart Wrist Support Brace is a game changer for my wrist pain."</p>
+                </div>
+                <div class="review-item">
+                    <h3>Emily Davis</h3>
+                    <p>"The ErgoCart Travel Neck Pillow made my long flights so much more comfortable!"</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="press">
+            <h2>In the Press</h2>
+            <div class="press-list">
+                <div class="press-item">
+                    <h3>Featured in Health Magazine</h3>
+                    <p>"ErgoCart's innovative products are changing the way we think about comfort."</p>
+                </div>
+                <div class="press-item">
+                    <h3>Top Picks by TechCrunch</h3>
+                    <p>"ErgoCart's ergonomic solutions are a must-have for anyone working from home."</p>
+                </div>
+                <div class="press-item">
+                    <h3>Best Ergonomic Products by Wired</h3>
+                    <p>"ErgoCart's products are designed with your comfort in mind."</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 ErgoCart. All rights reserved.</p>
+    </footer>
+</div>
+</body>
+</html>
