@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ErgoCart - Ergonomic Solutions</title>
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bx-cart icon'></i>
+            <div class="logo_name">ErgoCart</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li><a href="#home"><i class='bx bx-home'></i><span class="links_name">Home</span></a></li>
+            <li><a href="#product-categories"><i class='bx bx-category'></i><span class="links_name">Categories</span></a></li>
+            <li><a href="#bestsellers"><i class='bx bx-star'></i><span class="links_name">Bestsellers</span></a></li>
+            <li><a href="#newlaunches"><i class='bx bx-rocket'></i><span class="links_name">New Launches</span></a></li>
+            <li><a href="#combos"><i class='bx bx-gift'></i><span class="links_name">Combos</span></a></li>
+            <li><a href="#concerns"><i class='bx bx-health'></i><span class="links_name">Concerns</span></a></li>
+            <li><a href="#reviews"><i class='bx bx-message-square-dots'></i><span class="links_name">Reviews</span></a></li>
+            <li><a href="#press"><i class='bx bx-news'></i><span class="links_name">Press</span></a></li>
+            <li class="profile">
+                <div class="profile-details">
+                    <img src="assets/profile.jpg" alt="Profile">
+                    <div class="name_job">
+                        <div class="name">Ergo User</div>
+                        <div class="job">Premium Member</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log_out"></i>
+            </li>
+        </ul>
+    </div>
+    <div id="main-content">
+        <header>
+            <div class="header-logo">
+                <a href="#">ErgoCart</a>
+            </div>
+            <nav>
+                <ul class="nav-center">
+                    <li><a href="#product-categories">Categories</a></li>
+                    <li><a href="#bestsellers">Bestsellers</a></li>
+                    <li><a href="#combos">Combos</a></li>
+                    <li><a href="#support">Support</a></li>
+                </ul>
+                <ul class="nav-right">
+                    <li>
+                        <form class="nav-search-form">
+                            <input type="search" placeholder="Search products..." aria-label="Search products">
+                            <button type="submit"><i class='bx bx-search'></i></button>
+                        </form>
+                    </li>
+                    <li><a href="#cart"><i class='bx bx-cart'></i></a></li>
+                    <li><a href="#profile"><i class='bx bx-user'></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="hero">
+                <h1>Ergonomic Solutions for Modern Living</h1>
+                <p>Discover premium comfort for home, office, and travel</p>
+                <div class="hero-btn-center">
+                <button id="shop-now-btn" class="animated-btn">
+                    Shop Now
+                    <div class="icon">
+                        <svg height="24" width="30" viewBox="0 0 20 20">
+                            <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"/>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+            </section>
+            <section id="bestsellers">
+                <h2>Our Bestsellers</h2>
+                <div class="swiper bestseller-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <img src="assets/pillow.jpg" alt="Ortho Memory Pillow">
+                                <h3>Ortho Memory Pillow</h3>
+                                <div class="price">
+                                    <span class="current">₹999</span>
+                                    <span class="original">₹1,999</span>
+                                </div>
+                                <button class="cta">Quick View</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="assets/cushion.jpg" alt="Comfort Cushion">
+                                <h3>Comfort Cushion</h3>
+                                <div class="price">
+                                    <span class="current">₹1,299</span>
+                                    <span class="original">₹2,499</span>
+                                </div>
+                                <button class="cta">Quick View</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="assets/insoles.jpg" alt="Shoe Insoles">
+                                <h3>Shoe Insoles</h3>
+                                <div class="price">
+                                    <span class="current">₹499</span>
+                                    <span class="original">₹999</span>
+                                </div>
+                                <button class="cta">Quick View</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="assets/travelneckpillow.jpg" alt="Travel Neck Pillow">
+                                <h3>Travel Neck Pillow</h3>
+                                <div class="price">
+                                    <span class="current">₹799</span>
+                                    <span class="original">₹1,599</span>
+                                </div>
+                                <button class="cta">Quick View</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="assets/footrest.jpg" alt="Foot Rest Cushion">
+                                <h3>Foot Rest Cushion</h3>
+                                <div class="price">
+                                    <span class="current">₹1,199</span>
+                                    <span class="original">₹2,399</span>
+                                </div>
+                                <button class="cta">Quick View</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="assets/antifatiguemat.jpg" alt="Anti-Fatigue Mat">
+                                <h3>Anti-Fatigue Mat</h3>
+                                <div class="price">
+                                    <span class="current">₹2,999</span>
+                                    <span class="original">₹4,999</span>
+                                </div>
+                                <button class="cta">Quick View</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="assets/laptopstand.jpg" alt="Adjustable Laptop Stand">
+                                <h3>Adjustable Laptop Stand</h3>
+                                <div class="price">
+                                    <span class="current">₹2,499</span>
+                                    <span class="original">₹3,999</span>
+                                </div>
+                                <button class="cta">Quick View</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="assets/carneckpillow.jpg" alt="Car Neck Pillow">
+                                <h3>Car Neck Pillow</h3>
+                                <div class="price">
+                                    <span class="current">₹1,499</span>
+                                    <span class="original">₹2,999</span>
+                                </div>
+                                <button class="cta">Quick View</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="assets/mattresstopper.jpg" alt="Mattress Topper">
+                                <h3>Mattress Topper</h3>
+                                <div class="price">
+                                    <span class="current">₹3,999</span>
+                                    <span class="original">₹5,999</span>
+                                </div>
+                                <button class="cta">Quick View</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </section>
+            <section id="newlaunches">
+                <h2>New Arrivals</h2>
+                <div class="products-grid">
+                    <div class="product-card new">
+                        <div class="badge">New</div>
+                        <img src="assets/cushion.jpg" alt="Lumbar Cushion">
+                        <h3>Lumbar Support Cushion</h3>
+                        <div class="price">₹1,499</div>
+                        <button class="cta">Add to Cart</button>
+                    </div>
+                    <div class="product-card new">
+                        <div class="badge">New</div>
+                        <img src="assets/footrest.jpg" alt="Foot Rest Cushion">
+                        <h3>Ergo Foot Rest</h3>
+                        <div class="price">₹1,199</div>
+                        <button class="cta">Add to Cart</button>
+                    </div>
+                    <div class="product-card new">
+                        <div class="badge">New</div>
+                        <img src="assets/antifatiguemat.jpg" alt="Anti-Fatigue Mat">
+                        <h3>Ergo Anti-Fatigue Mat</h3>
+                        <div class="price">₹2,999</div>
+                        <button class="cta">Add to Cart</button>
+                    </div>
+                    <div class="product-card new">
+                        <div class="badge">New</div>
+                        <img src="assets/laptopstand.jpg" alt="Adjustable Laptop Stand">
+                        <h3>Ergo Laptop Stand</h3>
+                        <div class="price">₹2,499</div>
+                        <button class="cta">Add to Cart</button>
+                    </div>
+                    <div class="product-card new">
+                        <div class="badge">New</div>
+                        <img src="assets/carneckpillow.jpg" alt="Car Neck Pillow">
+                        <h3>Ergo Car Neck Pillow</h3>
+                        <div class="price">₹1,499</div>
+                        <button class="cta">Add to Cart</button>
+                    </div>
+                    <div class="product-card new">
+                        <div class="badge">New</div>
+                        <img src="assets/mattresstopper.jpg" alt="Mattress Topper">
+                        <h3>Ergo Mattress Topper</h3>
+                        <div class="price">₹3,999</div>
+                        <button class="cta">Add to Cart</button>
+                    </div>
+                    <div class="product-card new">
+                        <div class="badge">New</div>
+                        <img src="assets/travelneckpillow.jpg" alt="Travel Neck Pillow">
+                        <h3>Ergo Travel Neck Pillow</h3>
+                        <div class="price">₹799</div>
+                        <button class="cta">Add to Cart</button>
+                    </div>
+                    <div class="product-card new">
+                        <div class="badge">New</div>
+                        <img src="assets/insoles.jpg" alt="Shoe Insoles">
+                        <h3>Ergo Shoe Insoles</h3>
+                        <div class="price">₹499</div>
+                        <button class="cta">Add to Cart</button>
+                    </div>
+                    <div class="product-card new">
+                        <div class="badge">New</div>
+                        <img src="assets/cover.jpg" alt="Ergo Cover">
+                        <h3>Ergo Cover</h3>
+                        <div class="price">₹999</div>
+                        <button class="cta">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+            <section id="combos">
+                <h2>Value Combos</h2>
+                <div class="combos-grid">
+                    <div class="combo-card">
+                        <div class="combo-badge">Save 25%</div>
+                        <div class="combo-images">
+                            <img src="assets/pillow-combo.jpg" alt="Pillow Combo">
+                            <img src="assets/cushion-combo.jpg" alt="Cushion Combo">
+                        </div>
+                        <h3>Home Office Bundle</h3>
+                        <div class="price">
+                            <span class="original">₹2,998</span>
+                            <span class="discounted">₹2,399</span>
+                        </div>
+                        <button class="cta">View Combo</button>
+                    </div>
+                    <div class="combo-card">
+                        <div class="combo-badge">Save 20%</div>
+                        <div class="combo-images">
+                            <img src="assets/travel-combo.jpg" alt="Travel Combo">
+                            <img src="assets/insoles-combo.jpg" alt="Insoles Combo">
+                        </div>
+                        <h3>Travel Comfort Pack</h3>
+                        <div class="price">
+                            <span class="original">₹1,998</span>
+                            <span class="discounted">₹1,599</span>
+                        </div>
+                        <button class="cta">View Combo</button>
+                    </div>
+                    <div class="combo-card">
+                        <div class="combo-badge">Save 30%</div>
+                        <div class="combo-images">
+                            <img src="assets/footrest-combo.jpg" alt="Footrest Combo">
+                            <img src="assets/laptopstand-combo.jpg" alt="Laptop Stand Combo">
+                        </div>
+                        <h3>Ultimate Comfort Set</h3>
+                        <div class="price">
+                            <span class="original">₹4,998</span>
+                            <span class="discounted">₹3,499</span>
+                        </div>
+                        <button class="cta">View Combo</button>
+                    </div>
+                    <div class="combo-card">
+                        <div class="combo-badge">Save 15%</div>
+                        <div class="combo-images">
+                            <img src="assets/car-combo.jpg" alt="Car Combo">
+                            <img src="assets/mattresstopper-combo.jpg" alt="Mattress Topper Combo">
+                        </div>
+                        <h3>Car Comfort Pack</h3>
+                        <div class="price">
+                            <span class="original">₹3,998</span>
+                            <span class="discounted">₹3,399</span>
+                        </div>
+                        <button class="cta">View Combo</button>
+                    </div>
+                    <div class="combo-card">
+                        <div class="combo-badge">Save 10%</div>
+                        <div class="combo-images">
+                            <img src="assets/cover-combo.jpg" alt="Cover Combo">
+                            <img src="assets/mask-combo.jpg" alt="Mask Combo">
+                        </div>
+                        <h3>Comfort Essentials Pack</h3>
+                        <div class="price">
+                            <span class="original">₹1,998</span>
+                            <span class="discounted">₹1,799</span>
+                        </div>
+                        <button class="cta">View Combo</button>
+                    </div>
+                </div>
+            </section>
+            <section id="product-categories">
+                <h2>Shop by Category</h2>
+                <div class="category-grid">
+                    <a href="#" class="category-card">
+                        <img src="assets/insoles.jpg" alt="Insoles">
+                        <h3>Insoles</h3>
+                    </a>
+                    <a href="#" class="category-card">
+                        <img src="assets/pillow.jpg" alt="Pillows">
+                        <h3>Pillows</h3>
+                    </a>
+                    <a href="#" class="category-card">
+                        <img src="assets/cushion.jpg" alt="Cushions">
+                        <h3>Cushions</h3>
+                    </a>
+                    <a href="#" class="category-card">
+                        <img src="assets/footrest.jpg" alt="Footrests">
+                        <h3>Footrests</h3>
+                    </a>
+                    <a href="#" class="category-card">
+                        <img src="assets/laptopstand.jpg" alt="Laptop Stands">
+                        <h3>Laptop Stands</h3>
+                    </a>
+                    <a href="#" class="category-card">
+                        <img src="assets/travelneckpillow.jpg" alt="Travel Neck Pillows">
+                        <h3>Travel Neck Pillows</h3>
+                    </a>
+                    <a href="#" class="category-card">
+                        <img src="assets/antifatiguemat.jpg" alt="Anti-Fatigue Mats">
+                        <h3>Anti-Fatigue Mats</h3>
+                    </a>
+                    <a href="#" class="category-card">
+                        <img src="assets/mattresstopper.jpg" alt="Mattress Toppers">
+                        <h3>Mattress Toppers</h3>
+                    </a>
+                    <a href="#" class="category-card">
+                        <img src="assets/cover.jpg" alt="Covers">
+                        <h3>Covers</h3>
+                    </a>
+                    <a href="#" class="category-card">
+                        <img src="assets/car.jpg" alt="Car Accessories">
+                        <h3>Car Accessories</h3>
+                    </a>
+                    <a href="#" class="category-card">
+                        <img src="assets/mask.jpg" alt="Masks">
+                        <h3>Masks</h3>
+                    </a>
+                </div>
+            </section>
+            <section id="concerns">
+                <h2>Shop By Concern</h2>
+                <div class="concern-list">
+                    <div class="concern-item">
+                        <h3>Back Pain</h3>
+                        <p>Shop products designed to alleviate back pain.</p>
+                        <a href="backpain.html">Shop Now</a>
+                    </div>
+                    <div class="concern-item">
+                        <h3>Neck Pain</h3>
+                        <p>Explore our range of neck support products.</p>
+                        <a href="neckpain.html">Shop Now</a>
+                    </div>
+                    <div class="concern-item">
+                        <h3>Foot Pain</h3>
+                        <p>Find solutions for foot discomfort.</p>
+                        <a href="footpain.html">Shop Now</a>
+                    </div>
+                    <div class="concern-item">
+                        <h3>Wrist Pain</h3>
+                        <p>Discover ergonomic wrist support options.</p>
+                        <a href="wristpain.html">Shop Now</a>
+                    </div>
+                </div>
+            </section>
+            <section id="reviews">
+                <h2>Reviews</h2>
+                <div class="review-list">
+                    <div class="review-item">
+                        <h3>John Doe</h3>
+                        <p>"The ErgoCart Ortho Memory Pillow has changed my sleep quality!"</p>
+                    </div>
+                    <div class="review-item">
+                        <h3>Jane Smith</h3>
+                        <p>"I love the comfort of the ErgoCart Comfort Cushion. Highly recommend!"</p>
+                    </div>
+                    <div class="review-item">
+                        <h3>Mike Johnson</h3>
+                        <p>"The ErgoCart Wrist Support Brace is a game changer for my wrist pain."</p>
+                    </div>
+                    <div class="review-item">
+                        <h3>Emily Davis</h3>
+                        <p>"The ErgoCart Travel Neck Pillow made my long flights so much more comfortable!"</p>
+                    </div>
+                </div>
+            </section>
+            <section id="press">
+                <h2>In the Press</h2>
+                <div class="press-list">
+                    <div class="press-item">
+                        <h3>Featured in Health Magazine</h3>
+                        <p>"ErgoCart's innovative products are changing the way we think about comfort."</p>
+                    </div>
+                    <div class="press-item">
+                        <h3>Top Picks by TechCrunch</h3>
+                        <p>"ErgoCart's ergonomic solutions are a must-have for anyone working from home."</p>
+                    </div>
+                    <div class="press-item">
+                        <h3>Best Ergonomic Products by Wired</h3>
+                        <p>"ErgoCart's products are designed with your comfort in mind."</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 ErgoCart. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>

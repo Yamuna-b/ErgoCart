@@ -1,0 +1,77 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #eef5f9;
+    margin: 0;
+    color: #333;
+  }
+  
+  header {
+    background-color: #0288d1;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #hero {
+    background-color: #039be5;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  section {
+    max-width: 800px;
+    background: white;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .original-price {
+    color: #888;
+    text-decoration: line-through;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #0288d1;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #01579b;
+  }
+  
+  footer {
+    background-color: #01579b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  

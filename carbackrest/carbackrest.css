@@ -1,0 +1,48 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #eef2f3;
+    margin: 0;
+  }
+  header {
+    background-color: #283618;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav a {
+    color: #fff;
+    margin-left: 1rem;
+    text-decoration: none;
+  }
+  .product {
+    display: flex;
+    padding: 2rem;
+  }
+  .product img {
+    width: 300px;
+    height: auto;
+    margin-right: 2rem;
+    border-radius: 10px;
+  }
+  .details h2 {
+    color: #606c38;
+  }
+  .mrp {
+    text-decoration: line-through;
+    color: #aaa;
+    margin-left: 10px;
+  }
+  .off {
+    color: #bc4749;
+    font-weight: bold;
+  }
+  button {
+    padding: 10px 25px;
+    background-color: #dda15e;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  

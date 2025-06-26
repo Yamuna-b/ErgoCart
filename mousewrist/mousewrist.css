@@ -1,0 +1,77 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    background: #f3e5f5;
+    margin: 0;
+    color: #333;
+  }
+  
+  header {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 12px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #hero {
+    background-color: #8e24aa;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  section {
+    max-width: 800px;
+    background: white;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .original-price {
+    color: #999;
+    text-decoration: line-through;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #4a0072;
+  }
+  
+  footer {
+    background-color: #4a0072;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  

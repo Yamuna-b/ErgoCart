@@ -1,0 +1,47 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff3ec;
+    margin: 0;
+  }
+  header {
+    background: #e76f51;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav a {
+    color: white;
+    margin-left: 1rem;
+    text-decoration: none;
+  }
+  .product-details {
+    display: flex;
+    padding: 2rem;
+  }
+  .product-details img {
+    width: 280px;
+    border-radius: 12px;
+    margin-right: 2rem;
+  }
+  .info h2 {
+    color: #e63946;
+  }
+  .mrp {
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 10px;
+  }
+  .discount {
+    color: #2a9d8f;
+    font-weight: bold;
+  }
+  button {
+    padding: 10px 20px;
+    background: #f4a261;
+    color: white;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  
